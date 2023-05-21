@@ -52,6 +52,19 @@ body {
   margin: 0 auto;
 }
 
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
 .logo {
   font-family: "Raleway", sans-serif;
   font-weight: 800;
@@ -97,10 +110,13 @@ body {
   color: var(--white-color);
   cursor: pointer;
   text-align: center;
+  border-radius: 4px;
 }
 
 /* Header */
-
+.header{
+    border-bottom: 1px solid #e7e9fc;
+}
 .header-container {
   display: flex;
 }
@@ -111,13 +127,15 @@ body {
 
 .header-nav {
   display: flex;
-  padding: 24px 0px;
+  align-items: center;
   margin-right: auto;
 }
 
 .header-nav-list {
   display: flex;
   gap: 40px;
+  align-items: center;
+  padding: 24px 0;
 }
 
 .header-logo-part {
@@ -172,7 +190,7 @@ body {
   letter-spacing: var(--main-letter-spacing);
   color: var(--white-color);
   margin: 0 0 48px;
-  width: 496px;
+  max-width: 496px;
 }
 
 .hero-btn {
@@ -180,6 +198,9 @@ body {
   padding: 16px 32px;
   display: block;
   margin: 0 auto;
+  min-width: 169px;
+  height: 56px;
+  border: none;
 }
 
 .hero-btn:is(:hover, :focus) {
@@ -188,21 +209,25 @@ body {
 
 /* Features */
 
+.features{
+    padding: 120px 0;
+}
+
 .features-list {
-  padding: 120px 0;
   display: flex;
-  gap: 20px;
+  gap: 24px;
 }
 
 /* Services */
 
 .services {
+
   padding: 0 0 120px;
 }
 
 .services-list {
   display: flex;
-  gap: 20px;
+  gap: 24px;
 }
 
 /* Team */
@@ -214,11 +239,12 @@ body {
 
 .team-list {
   display: flex;
-  gap: 20px;
+  gap: 24px;
 }
 
 .team-item {
   background-color: var(--white-color);
+  border-radius: 0px 0px 4px 4px
 }
 
 .text-content {
@@ -240,14 +266,18 @@ body {
   padding: 100px 0;
 }
 
+.footer-logo{
+    display: inline-block;
+    margin-bottom: 16px;
+}
+
 .footer-logo-part {
   color: var(--footer-text-color);
 }
 
 .footer-text {
-  margin: 16px 0 0;
   color: var(--footer-text-color);
-  width: 264px;
+  max-width: 264px;
 }
 
 /* Portfolio page */
@@ -259,6 +289,7 @@ body {
 .filter-btn:is(:hover, :focus) {
   background: var(--hover-focus-active-color);
   color: var(--white-color);
+  border: 1px solid transparent;
 }
 
 .filter-btn {
@@ -278,7 +309,7 @@ body {
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 40px 20px;
+  gap: 40px 24px;
 }
 
 .portfolio-item {
