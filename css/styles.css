@@ -131,16 +131,13 @@ body {
   display: flex;
   align-items: center;
   margin-right: auto;
+  padding: 24px 0;
 }
 
 .header-nav-list {
   display: flex;
   gap: 40px;
   align-items: center;
-}
-
-.header-nav-item {
-  padding: 24px 0;
 }
 
 .header-logo-part {
