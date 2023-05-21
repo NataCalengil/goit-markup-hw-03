@@ -53,18 +53,19 @@ body {
 }
 
 .visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
-  }
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .logo {
   font-family: "Raleway", sans-serif;
   font-weight: 800;
@@ -114,9 +115,10 @@ body {
 }
 
 /* Header */
-.header{
-    border-bottom: 1px solid #e7e9fc;
+.header {
+  border-bottom: 1px solid #e7e9fc;
 }
+
 .header-container {
   display: flex;
 }
@@ -135,6 +137,9 @@ body {
   display: flex;
   gap: 40px;
   align-items: center;
+}
+
+.header-nav-item {
   padding: 24px 0;
 }
 
@@ -170,7 +175,6 @@ body {
 }
 
 /* Hero */
-
 
 .hero {
   background-color: var(--secondary-text-color);
@@ -209,8 +213,8 @@ body {
 
 /* Features */
 
-.features{
-    padding: 120px 0;
+.features {
+  padding: 120px 0;
 }
 
 .features-list {
@@ -221,7 +225,6 @@ body {
 /* Services */
 
 .services {
-
   padding: 0 0 120px;
 }
 
@@ -244,7 +247,7 @@ body {
 
 .team-item {
   background-color: var(--white-color);
-  border-radius: 0px 0px 4px 4px
+  border-radius: 0px 0px 4px 4px;
 }
 
 .text-content {
@@ -266,9 +269,9 @@ body {
   padding: 100px 0;
 }
 
-.footer-logo{
-    display: inline-block;
-    margin-bottom: 16px;
+.footer-logo {
+  display: inline-block;
+  margin-bottom: 16px;
 }
 
 .footer-logo-part {
@@ -297,10 +300,10 @@ body {
   border: var(--border-color);
   color: var(--accent-color);
   padding: 12px 24px;
+  margin-bottom: 72px;
 }
 
 .portfolio-list-btn {
-  padding: 0 0 72px;
   display: flex;
   gap: 24px;
   justify-content: center;
@@ -309,9 +312,10 @@ body {
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 40px 24px;
+  gap: 24px;
+  row-gap: 48px;
 }
 
 .portfolio-item {
-  border: var(--border-color);
+  border: 1px solid #e7e9fc;
 }
